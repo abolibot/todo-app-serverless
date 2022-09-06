@@ -7,7 +7,7 @@ import { cors, httpErrorHandler } from 'middy/middlewares'
 import {
   createAttachmentPresignedUrl,
   todoItemExists
-} from '../../helpers/todos'
+} from '../../businessLogic/todos'
 
 export const handler = middy(
   async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {

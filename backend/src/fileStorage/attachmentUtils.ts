@@ -1,6 +1,6 @@
 import * as AWS from 'aws-sdk'
 import * as AWSXRay from 'aws-xray-sdk'
-import { TodoAccess } from './todosAcess'
+import { TodoAccess } from '../dataLayer/todosAcess'
 
 const XAWS = AWSXRay.captureAWS(AWS)
 

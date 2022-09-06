@@ -4,7 +4,8 @@
   "type": "object",
   "properties": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]{1,}[- ]{0,}[a-zA-Z0-9]{1,}$"
     },
     "dueDate": {
       "type": "string"

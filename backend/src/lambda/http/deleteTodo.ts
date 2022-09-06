@@ -4,7 +4,7 @@ import { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda'
 import * as middy from 'middy'
 import { cors, httpErrorHandler } from 'middy/middlewares'
 
-import { deleteTodoItem, todoItemExists } from '../../helpers/todos'
+import { deleteTodoItem, todoItemExists } from '../../businessLogic/todos'
 
 export const handler = middy(
   async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
